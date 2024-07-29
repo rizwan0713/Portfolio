@@ -1,0 +1,23 @@
+.navList{
+    display: flex;
+    gap: 0.8rem;
+}
+
+@media screen and (max-width: 768px){
+    .navList{
+        position: absolute;
+        flex-direction: column;
+        top: 5rem;
+        background-color: white;
+        padding: 2rem 1rem;
+        height: calc(100vh - 5rem);
+        width: 200px;
+        border-radius: 20px;
+        right: -100%;
+        transition: all 0.2s ease-in;
+    }
+
+    .navList.active{
+        right: 0;
+    }
+}

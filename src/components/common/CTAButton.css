@@ -1,0 +1,30 @@
+.CTAButton{
+    overflow-y: hidden;
+}
+
+.CTAButton::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    transform: rotate(-45deg);
+    left: -100%; top: 0;
+    background: white;
+    transition: all 0.1s linear;
+    filter: blur(3px);
+}
+
+/* .CTAButton:hover{
+    color: white;
+} */
+
+.CTAButton:hover::before{
+
+    /* background-color: black; */
+    left: 100%;
+}
+
+.activeButton{
+    background: linear-gradient(90deg,rgb(26, 152, 255),rgb(0, 94, 255), rgb(28, 43, 255), rgb(106, 0, 255), rgb(255, 0, 251));
+
+}

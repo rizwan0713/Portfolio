@@ -1,0 +1,14 @@
+/* src/components/Layout.css */
+
+.layout {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cursor-trail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  

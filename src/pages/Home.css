@@ -1,0 +1,10 @@
+.circleAnimation{
+    animation: circle 20s  infinite linear;
+    transition: all 1s ease-in;
+}
+
+@keyframes circle {
+    from { 	transform: rotate(0deg) translateX(150px); }
+	to   {  transform: rotate(360deg) translateX(150px); }
+}
+

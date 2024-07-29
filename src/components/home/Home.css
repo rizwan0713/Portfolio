@@ -1,0 +1,32 @@
+.linearAnimation{
+    width: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgb(102, 116, 204) 0.07%, rgb(102, 116, 204) 22%, transparent);
+    /* height: 100%; */
+    animation: topDown 6s infinite ease-in alternate;
+}
+
+@keyframes topDown {
+    0%{
+        height: 5%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.iconAnimation{
+    transform: translateY(0);
+    animation: iconAni 6s infinite linear alternate;
+}
+
+@keyframes iconAni {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100px);
+    }
+}
