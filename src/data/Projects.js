@@ -20,6 +20,23 @@ export const Project = [
       ]
     },
 
+      // Confessly
+        {
+          image : "https://res.cloudinary.com/mohdrizwan/image/upload/v1724149268/Portfolio%20Images/Confessly.png",
+          name : "Confessly",
+          description : "Confessly is An Anonymous Message app For Real People and Real Messages",
+          array : [
+            {
+              icon : <IoIosEye/>,
+              link : "https://confessly-rizwan.vercel.app/"
+            },
+            {
+              icon : <FaGithub/>,
+              link : "https://github.com/rizwan0713/Confessly"
+            },
+  
+          ]
+        },
     // Weather App
     {
         image : "https://res.cloudinary.com/mohdrizwan/image/upload/v1718986949/Portfolio%20Images/Weather%20App.png",
