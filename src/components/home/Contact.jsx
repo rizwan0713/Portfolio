@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import SectionHeading from "../common/SectionHeading";
 import { LuSend } from "react-icons/lu";
 import { motion } from "framer-motion";
@@ -8,7 +8,6 @@ import { setActiveSection } from "../../reducers/slices/navSlice";
 
 const Contact = () => {
   const dispatch = useDispatch();
-
   const { ref, inView } = useInView({
     threshold: 0.75,
   });
@@ -36,7 +35,7 @@ const Contact = () => {
           </a>{"  "}
           or through this form.
         </p>
-        <form action=""  className="w-full max-w-[500px] flex flex-col  gap-2">
+        <form    className="w-full max-w-[500px] flex flex-col  gap-2">
           <div>
             <input
               type="email"
@@ -69,12 +68,11 @@ const Contact = () => {
                 "
             onClick={(e) => {
               e.preventDefault();
-
-              console.log("Submit Clicked");
+              // console.log("Submit Clicked");
             }}
             whileTap={{ scale: "0.9" }}
           >
-            <span className="text-lg">Submit</span>
+            <button className="text-lg" >Submit</button>
             <LuSend
               size={16}
               className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-200"

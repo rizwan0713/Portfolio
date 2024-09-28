@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import homeLogo from "../../assets/home/homeLogo.png";
+import homeLogo from "../../assets/home/homeLogo2.png";
 import circle from "../../assets/diamondIcons/circle.png";
 import CTAButton from '../common/CTAButton';
 import { TypeAnimation } from 'react-type-animation';
