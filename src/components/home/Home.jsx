@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import homeLogo from "../../assets/home/homeLogo2.png";
+// import homeLogo from "../../assets/home/homeLogo2.png";
 import circle from "../../assets/diamondIcons/circle.png";
 import CTAButton from '../common/CTAButton';
 import { TypeAnimation } from 'react-type-animation';
@@ -167,14 +167,14 @@ const Home = () => {
           <img src={circle} alt="" />
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="w-[100%] z-10"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 3, duration: 1.8 }}
         >
           <img src={homeLogo} alt="Logo" />
-        </motion.div>
+        </motion.div> */}
       </div>
 
 
