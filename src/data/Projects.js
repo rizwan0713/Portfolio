@@ -10,7 +10,7 @@ export const Project = [
       array : [
         {
           icon : <IoIosEye/>,
-          link : "https://study-notion-rizwan.vercel.app/",
+          link : "https://studynotion.codewithrizwan.in/",
         },
         {
           icon : <FaGithub/>,
@@ -28,7 +28,7 @@ export const Project = [
           array : [
             {
               icon : <IoIosEye/>,
-              link : "https://confessly-rizwan.vercel.app/"
+              link : "https://confessly.codewithrizwan.in/"
             },
             {
               icon : <FaGithub/>,
