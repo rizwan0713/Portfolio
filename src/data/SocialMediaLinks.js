@@ -9,7 +9,9 @@ export const SocialMediaLinks = [
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/code.withrizwan/',
-      imgSrc: '/Instagram.png', 
+      // imgSrc: '/Instagram.png', 
+      imgSrc: '/Github.png', 
+
       color : "#E03466" 
 
     },
