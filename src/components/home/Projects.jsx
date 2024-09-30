@@ -15,82 +15,6 @@ import "swiper/css/pagination";
 
 import { Project } from "../../data/Projects";
 
-const Projects = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-  });
-  const dispatch = useDispatch();
-  const { timeOfLastClick } = useSelector((state) => state.activeSec);
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      dispatch(setActiveSection("projects"));
-    }
-  }, [inView]);
-
-  const sliderRef = useRef(null);
-
-  const handlePrev = useCallback(() => {
-    if (!sliderRef.current) return;
-    sliderRef.current.swiper.slidePrev();
-  }, []);
-
-  const handleNext = useCallback(() => {
-    if (!sliderRef.current) return;
-    sliderRef.current.swiper.slideNext();
-  }, []);
-
-  return (
-    <section ref={ref} id="projects" className="scroll-mt-20 ">
-      <SectionHeading text="Projects" />
-
-      <div className="w-[95%] max-w-[1260px] mx-auto relative overflow-hidden mt-8">
-        <Swiper
-          ref={sliderRef}
-          effect="cube"
-          slidesPerView={1}
-          spaceBetween={25}
-          loop={true}
-          freeMode={true}
-          autoplay={{
-            delay: 500,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            700: {
-              slidesPerView: 2,
-              loop: true,
-            },
-            1024: {
-              slidesPerView: 3,
-              loop: true,
-            },
-          }}
-        >
-          {Project.map((el, index) => (
-            <SwiperSlide key={index}>
-              <ProjectCard projectCard={el}/>
-            </SwiperSlide>
-          ))}
-
-          <div className="flex items-center justify-evenly mt-6 text-rich-black-600">
-            <div
-              className="prev-arrow h-10 w-10  bg-rich-black-5 dark:text-white dark:bg-rich-black-700 border-rich-purple-300 dark:border-rich-black-600 border-2  relative rounded-full grid place-content-center"
-              onClick={handlePrev}
-            >
-              <IoIosArrowBack size={20}/>
-            </div>
-            <div
-              className="next-arrow h-10 w-10  bg-rich-black-5 dark:text-white dark:bg-rich-black-700 border-rich-purple-300 dark:border-rich-black-600 border-2  relative rounded-full grid place-content-center"
-              onClick={handleNext}
-            >
-              <IoIosArrowForward size={20}/>
-            </div>
-          </div>
-        </Swiper>
-      </div>
-    </section>
-  );
-};
 
 const ProjectCard = ({ projectCard }) => {
   return (
@@ -131,5 +55,90 @@ const ProjectCard = ({ projectCard }) => {
     </div>
   );
 };
+
+const Projects = () => {
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+  const dispatch = useDispatch();
+  const { timeOfLastClick } = useSelector((state) => state.activeSec);
+  useEffect(() => {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      dispatch(setActiveSection("projects"));
+    }
+  }, [inView]);
+
+  // const sliderRef = useRef(null);
+
+  // const handlePrev = useCallback(() => {
+  //   if (!sliderRef.current) return;
+  //   sliderRef.current.swiper.slidePrev();
+  // }, []);
+
+  // const handleNext = useCallback(() => {
+  //   if (!sliderRef.current) return;
+  //   sliderRef.current.swiper.slideNext();
+  // }, []);
+
+  return (
+    <section ref={ref} id="projects" className="scroll-mt-20 ">
+      <SectionHeading text="Projects" />
+
+      <div className="w-[95%] max-w-[1260px] mx-auto relative overflow-hidden mt-8">
+
+
+
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  {Project.map((el, index) => (
+    <div key={index} className="">
+      <ProjectCard projectCard={el} />
+    </div>
+  ))}
+</div>
+
+
+        {/* <Swiper
+          ref={sliderRef}
+          effect="cube"
+          slidesPerView={1}
+          spaceBetween={25}
+          loop={true}
+          freeMode={true}
+          autoplay={{
+            delay: 500,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            700: {
+              slidesPerView: 2,
+              loop: true,
+            },
+            1024: {
+              slidesPerView: 3,
+              loop: true,
+            },
+          }}
+        > */}
+       
+          {/* <div className="flex items-center justify-evenly mt-6 text-rich-black-600">
+            <div
+              className="prev-arrow h-10 w-10  bg-rich-black-5 dark:text-white dark:bg-rich-black-700 border-rich-purple-300 dark:border-rich-black-600 border-2  relative rounded-full grid place-content-center"
+              onClick={handlePrev}
+            >
+              <IoIosArrowBack size={20}/>
+            </div>
+            <div
+              className="next-arrow h-10 w-10  bg-rich-black-5 dark:text-white dark:bg-rich-black-700 border-rich-purple-300 dark:border-rich-black-600 border-2  relative rounded-full grid place-content-center"
+              onClick={handleNext}
+            >
+              <IoIosArrowForward size={20}/>
+            </div>
+          </div> */}
+        {/* </Swiper> */}
+      </div>
+    </section>
+  );
+};
+
 
 export default Projects;

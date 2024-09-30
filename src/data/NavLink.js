@@ -20,6 +20,10 @@ const navLinks = [
         name : 'projects',
     },
     {
+        path : '/#SocialMedia',
+        name : 'Social Media',
+    },
+    {
         path : '/#contact',
         name : 'contact',
     },

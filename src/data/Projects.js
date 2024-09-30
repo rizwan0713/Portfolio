@@ -24,7 +24,7 @@ export const Project = [
         {
           image : "https://res.cloudinary.com/mohdrizwan/image/upload/v1724149268/Portfolio%20Images/Confessly.png",
           name : "Confessly",
-          description : "Confessly is An Anonymous Message app For Real People and Real Messages",
+          description : "Confessly is An AI Powered Anonymous Message app For Real People and Real Messages.Developed using the Nextjs.",
           array : [
             {
               icon : <IoIosEye/>,
@@ -37,23 +37,25 @@ export const Project = [
   
           ]
         },
-    // Weather App
-    {
-        image : "https://res.cloudinary.com/mohdrizwan/image/upload/v1718986949/Portfolio%20Images/Weather%20App.png",
-        name : "Weather App",
-        description : "Weather app is a website that enables users to fetch the weather condition of any location with the help of REST API.",
-        array : [
-          {
-            icon : <IoIosEye/>,
-            link : "https://weather-app-rizwan.netlify.app/"
-          },
-          {
-            icon : <FaGithub/>,
-            link : "https://github.com/rizwan0713/Weather-App"
-          },
 
-        ]
-      },
+
+         // Top-Courses
+    {
+      image : "https://res.cloudinary.com/mohdrizwan/image/upload/v1727711390/Top-Courses-Rizwan.png",
+      name : "Top Courses  ",
+      description : " This project is a course catalog built using React.js where users can interact with course cards by liking or disliking them.",
+      array : [
+        {
+          icon : <IoIosEye/>,
+          link : "https://top-courses-rizwan.vercel.app/"
+        },
+        {
+          icon : <FaGithub/>,
+          link : "hhttps://github.com/rizwan0713/Top-Courses"
+        },
+      ]
+    },
+
 
     // Dev-detective-project
     {
@@ -72,6 +74,42 @@ export const Project = [
       ]
     },
 
+         // Random Password Generator
+         {
+          image : "https://res.cloudinary.com/mohdrizwan/image/upload/v1727710576/Random_Password_Generator_edsxhl.png",
+          name : "Random Password Generator",
+          description : "This web application provides a simple and efficient way to generate strong and secure passwords with just a click. ",
+          array : [
+            {
+              icon : <IoIosEye/>,
+              link : "https://rizwan0713.github.io/Password-Generator-/"
+            },
+            {
+              icon : <FaGithub/>,
+              link : "https://github.com/rizwan0713/Password-Generator-"
+            },
+          ]
+        },
+    
+      // Weather App
+      {
+        image : "https://res.cloudinary.com/mohdrizwan/image/upload/v1718986949/Portfolio%20Images/Weather%20App.png",
+        name : "Weather App",
+        description : "Weather app is a website that enables users to fetch the weather condition of any location with the help of REST API.",
+        array : [
+          {
+            icon : <IoIosEye/>,
+            link : "https://weather-app-rizwan.netlify.app/"
+          },
+          {
+            icon : <FaGithub/>,
+            link : "https://github.com/rizwan0713/Weather-App"
+          },
+
+        ]
+      },
+
+
   
     // Razorpay
     {
@@ -86,6 +124,25 @@ export const Project = [
         {
           icon : <FaGithub/>,
           link : "https://github.com/rizwan0713/Razorpay-Clone-Website"
+        },
+      ]
+    },
+
+
+
+     // Tic Tac Toe Game
+     {
+      image : "https://res.cloudinary.com/mohdrizwan/image/upload/v1727710778/Screenshot_2024-09-30_210923_l2wj03.png",
+      name : "Tic Tac Toe Game",
+      description : "This project is a simple implementation of the classic Tic Tac Toe game",
+      array : [
+        {
+          icon : <IoIosEye/>,
+          link : "https://tic-tac-toe-rizwan.netlify.app/"
+        },
+        {
+          icon : <FaGithub/>,
+          link : "https://github.com/rizwan0713/Tic-Tac-Toe"
         },
       ]
     },

@@ -8,6 +8,7 @@ import Contact from '../components/home/Contact';
 import Home from '../components/home/Home'
 import About from '../components/home/About';
 import Projects from '../components/home/Projects';
+import SocialMedia from '../components/home/SocialMedia';
 
 const HomePage = () => {
 
@@ -23,6 +24,7 @@ const HomePage = () => {
         <Skills/>
         <Eductaion/>
         <Projects/>
+        <SocialMedia/>
         <Contact/>
 
 

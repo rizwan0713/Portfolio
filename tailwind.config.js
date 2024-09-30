@@ -10,6 +10,8 @@ module.exports = {
       colors:{
         "lightWhite" : "#f5f5f5",
 
+
+
         "para" : "#777777",
 
         "rich-purple-50" : "#f3f2ff",
