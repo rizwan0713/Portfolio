@@ -2,7 +2,7 @@ export const SocialMediaLinks = [
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/mohd-rizwan1/',
-      imgSrc: '/Linkedin.png', 
+      imgSrc: '/Post.png', 
       color : "#008FE8" 
 
     },
